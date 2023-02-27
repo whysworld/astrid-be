@@ -1,23 +1,29 @@
 package post
- 
+
+import (
+	storage "internal/pkg/storage"
+)
+
 type createRequest struct {
-	Title string   `json:"title"`
-	Text  string   `json:"text"`
-	Tags  []string `json:"tags"`
+	ApiVersion string           `json:"apiVersion"`
+	Kind       string           `json:"kind"`
+	Metadata   storage.MetaData `json:"metadata"`
+	Spec       storage.Spec     `json:"spec"`
 }
- 
+
 type updateRequest struct {
 	ID string
- 
-	Title string   `json:"title"`
-	Text  string   `json:"text"`
-	Tags  []string `json:"tags"`
+
+	ApiVersion string           `json:"apiVersion"`
+	Kind       string           `json:"kind"`
+	Metadata   storage.MetaData `json:"metadata"`
+	Spec       storage.Spec     `json:"spec"`
 }
- 
+
 type deleteRequest struct {
 	ID string
 }
- 
+
 type findRequest struct {
 	ID string
 }
