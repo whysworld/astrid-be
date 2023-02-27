@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
  
-	"github.com/you/elastic/internal/pkg/storage"
+	"internal/pkg/storage"
  
 	"github.com/google/uuid"
 )

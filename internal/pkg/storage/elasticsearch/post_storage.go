@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
  
-	"github.com/you/elastic/internal/pkg/domain"
-	"github.com/you/elastic/internal/pkg/storage"
+	"internal/pkg/domain"
+	"internal/pkg/storage"
  
 	"github.com/elastic/go-elasticsearch/v7/esapi"
 )

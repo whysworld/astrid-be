@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
  
-	"github.com/you/elastic/internal/pkg/storage/elasticsearch"
-	"github.com/you/elastic/internal/post"
+	"internal/pkg/storage/elasticsearch"
+	"internal/post"
  
 	"github.com/julienschmidt/httprouter"
 )
